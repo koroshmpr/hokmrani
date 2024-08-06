@@ -1,0 +1,47 @@
+// Base styles
+.btn {
+  display: inline-block;
+  font-family: $font-family-base;
+  color: $body-text;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: unset;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  @include transition($btn-transition);
+  outline: 0 !important;
+  z-index: 1;
+  position: relative;
+
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+}
+
+.course-btn , .gform_button {
+  background: linear-gradient(45deg, $white 50%, $secondary 50%) !important;
+  background-size: 200% 100% !important;
+  color: #fff!important;
+  border: none!important;
+  padding: 15px 30px!important;
+  font-weight: bold!important;
+  transition: all 0.5s ease!important;
+  &:hover {
+    background-position: -100% 0!important;
+  }
+}
+.gform_button {
+  border-radius: 10px!important;
+}

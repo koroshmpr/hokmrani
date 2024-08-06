@@ -1,0 +1,25 @@
+.gform_wrapper {
+  .gform-field-label {
+    color:white !important
+  }
+  .gform_required_legend {
+    display: none;
+  }
+  input {
+    border-color: rgba(128, 128, 128, 0.28)!important;
+  }
+  input:not([type="submit"]), select {
+    transition: all 0.7s linear!important;
+    height: 60px!important;
+    padding:10px!important;
+  }
+  .gform_button {
+    min-width: 200px!important;
+  }
+  .ginput_container_date {
+    width: 33%!important;
+  }
+}
+.gform_validation_errors {
+  display:none!important;
+}
